@@ -10,9 +10,10 @@ windows-hash-viewは、ファイルをドラッグオンドロップしてハッ
 中身を見てもらえばわかると思うのですが、
 
 ```cmd
-certutil -hashfile %%i SHA256 [filename]
+certutil -hashfile [filename] SHA256
 ```
 
 ↑を使っているだけなので、SHA256の部分を変えてあげれば、certutilで扱えるやつは全部使えます。
+胡散臭いと思う方は、コマンドプロンプトを開いて↑を実行でもおｋです。
 
 とりあえず、md5, sha1, sha256をデフォで用意してみました。
